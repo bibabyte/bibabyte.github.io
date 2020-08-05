@@ -10,4 +10,16 @@ h1 {
 
 .img-full {
 	width: 100vw;
+	margin: 1px 0;
+}
+
+table, th, td {
+	border: 1px solid #999;
+}
+
+#menuBar {
+	display: flex;
+	justify-content: space-around;
+	border-top: 3px solid #00008B;
+	border-bottom: 3px solid #00008B;
 }
