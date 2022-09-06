@@ -1,0 +1,83 @@
+
+#welcomeSection {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	scroll-snap-align: start;
+	grid-column: 1 / span 7;
+}
+
+main ul {
+	display: grid;
+	grid-template-columns: subgrid;
+	padding: 0;
+}
+
+main li {
+	list-style: circle;
+	text-align: center;
+	grid-column: 3 / span 3;
+}
+
+
+i::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+i:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+i::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(174, 79%, 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+i {
+	font-style: normal;
+	position: relative;
+}
+
+h2, h3, h4 {
+	padding-top: 2em;
+	scroll-snap-align: start;
+}
+
+#aboutMe {
+	min-height: 90vh;
+	grid-column: 3 / span 3;
+}
+
+#goals {
+	min-height: 90vh;
+}
+
+#projects {
+	grid-column: 3 / span 3;
+}
+
+.projectHighlight {
+	min-height: 90vh;
+}
+
+.projectTitle {
+	padding-bottom: 1.6em;
+}
+
+iframe {
+	height: 60vh;
+	width: 65vw;
+	border-radius: 10px;
+	padding: 1em;
+ 	border: 10px solid hsl(173, 20%, 26%);
+}

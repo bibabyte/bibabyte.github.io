@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Projects</title>
-	<link rel="stylesheet" href="../style.css" type="text/stylesheet" />
-</head>
+	<head>
+		<title>Projects</title>
+		<link rel="stylesheet" href="../css/main.css" type="text/stylesheet" />
+	</head>
 
 <body>
-	<h1>Projects</h1>
-	<h2>A collection of pages that I built while learning web development.</h2>
-	<!--They're fun, well-designed, and easy to use. If you have any feedback please let me know!-->
+  <header>
+    <nav class="navbar" id="navbar">
+  		<ul>
+  			<li><a href="projects/index.html">Projects</a></li>
+  			<li><a href="#aboutMe">About Me</a></li>
+  		</ul>
+  	</nav>
+  </header>
 
-	
+	<main>
+	<h1>Projects</h1>
+	<h2>A collection of pages built while learning web development.</h2>
+	<!--They're fun, well-designed, and easy to use. If you have any feedback please let me know!-->
+		<section class="tiles" id="projects">
+			<div class="project-tile" id="tribute">
+				<a href="https://joseph-loren.github.io/tribute-page"><h2>A Tribute</h2>
+					<img src="https://joseph-loren.github.io/TributeThumb.png" alt="Tribute Site Preview">
+				</a>
+			</div>
+			<div class="project-tile" id="survey">
+				<a href="https://joseph-loren.github.io/survey-form"><h2>Self-Reflection Survey</h2>
+					<img src="https://joseph-loren.github.io/SurveyThumb.png" alt="Happiness Survey Preview">
+				</a>
+			</div>
+			<div class="project-tile" id="towel">
+				<a href="https://joseph-loren.github.io/product-landing-page"><h2>Turkish Towel Store</h2>
+					<img src="https://joseph-loren.github.io/TowelThumb.png" alt="Towel Store Preview">
+				</a>
+			</div>
+			<div class="project-tile" id="tech">
+				<a href="https://joseph-loren.github.io/tech-doc-page"><h2>How To 3D Printing</h2>
+					<img src="https://joseph-loren.github.io/PrintThumb.png" alt="Tech Doc Preview">
+				</a>
+			</div>
+			<div class="project-tile" id="meta">
+				<a href="https://joseph-loren.github.io"><h2>metaPage</h2>
+					<img src="https://joseph-loren.github.io/JLDThumb.png" alt="Portfolio Preview">
+				</a>
+			</div>
+			<div class="project-tile" id="bio">
+				<h2>..a little bit about me..</h2>
+				<p>I am on a quest to experience. The new, the old, the different.. I enjoy considering those experiences through differing contexts. Each combination of experience and context is like a whole new experience!</p>
+				<p>I want to learn all the things. This may be unlikely, but I persist without worry. </p>
+				<p>I like to look at life through a wide-angle lens, but still maintain a high-resolution. I also like to find comedy in the universe's relative tragedy. Both imperative to maintain a dynamic perspective and never concede to absolutes.</p>
+			</div>
+		</section>
+		<section class="where" id="where">
+			<h2>Where in the world is Joseph?</h2>
+			<iframe id="map" src="https://www.openstreetmap.org/export/embed.html?bbox=29.007961750030518%2C41.04556949333525%2C29.033582210540775%2C41.055974409833425&amp;layer=transportmap&amp;marker=41.05077215727038%2C29.020771980285645"></iframe>
+			<a id="mapLink" href="https://www.openstreetmap.org/?mlat=41.0508&amp;mlon=29.0208#map=16/41.0508/29.0208&amp;layers=N">Afficher une carte plus grande</a>
+		</section>
+	</main>
+
 	<script src="../script.js" type="text/javascript"></script>
 </body>
 </html>
